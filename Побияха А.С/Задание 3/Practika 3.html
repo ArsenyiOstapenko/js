@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let surname = prompt ('Введите фамилию');
+		let quanityVolwes = 0;
+		let vowels = ['а','о','у','э','ы','е','ё','ю','я','и'];
+		document.writeln('фамилия' + surname + '<br>');
+		for (let i = 0; i<vowels.length; i++){
+		    for (let j=0; j<surname.length;j++){
+		    	if (vowels[i]==surname[j])
+		    	{
+		    		quanityVolwes++;
+		    	}
+		    }
+		}
+		document.writeln("количесто гласных"+quanityVolwes + "<br>");
+		document.writeln("количество согласных"+(surname.length - quanityVolwes)+"<br>");
+	</script>
+
+</body>
+</html>
